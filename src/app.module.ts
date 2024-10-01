@@ -8,6 +8,7 @@ import { EventsModule } from './modules/events/events.module';
 import { CoreModule } from './modules/core/core.module';
 import { ThrottlerModule } from '@nestjs/throttler';
 import typeorm from './config/typeorm';
+import { LoggerModule } from './logger/logger.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import typeorm from './config/typeorm';
         limit: 10,
       },
     ]),
+    LoggerModule,
     TypeOrmModule.forRootAsync({
       inject: [ConfigService],
       useFactory: async (configService: ConfigService) =>
