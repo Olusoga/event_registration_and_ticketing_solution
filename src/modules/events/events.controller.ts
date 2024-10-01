@@ -10,7 +10,7 @@ import { Throttle } from '@nestjs/throttler';
 export class EventsController {
   constructor(private readonly eventService: EventsService) {}
 
-  @Post()
+  @Post('/initialize')
   @Throttle({ default: { limit: 3, ttl: 60000 } })
   @ApiOperation({ summary: 'create event' })
   async createEvent(@Body() createEventDto: CreateEventDto) {
