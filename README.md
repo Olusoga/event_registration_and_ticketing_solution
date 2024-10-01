@@ -151,7 +151,7 @@ src
 ├── app.service.ts
 ├── main.ts
 ├── modules
-│   ├── cored
+│   ├── core
 |   |   ├──dtos/
 |   |   |   ├──cancel-booking.dto.ts
 |   |   |   ├──create-booking.dto.ts
