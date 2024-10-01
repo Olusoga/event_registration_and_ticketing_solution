@@ -28,7 +28,7 @@ Welcome to the Event Ticket Booking System! 🎟️ This Node.js application is 
 ## Technologies Used
 
 - **Node.js**: The backbone of the application, providing a non-blocking, event-driven architecture.
-- **NestJS**: A powerful framework for building scalable server-side applications with a focus on modularity.
+- **NestJS(Express)**: A powerful framework for building scalable server-side applications with a focus on modularity.
 - **TypeORM**: For seamless database interactions and migrations.
 - **PostgreSQL**: A robust RDBMS for storing our order details.
 - **Swagger**: For generating interactive API documentation.
@@ -42,8 +42,8 @@ Let’s get this project up and running!
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/event-ticket-booking-system.git
-   cd event-ticket-booking-system
+   git clone https://github.com/Olusoga/event_registration_and_ticketing_solution.git
+   cd event_registration_and_ticketing_solution
    ```
 
 2. **Install dependencies**:
@@ -66,7 +66,7 @@ Let’s get this project up and running!
    ```
 
 6. **Explore the API**:
-   - Head over to `http://localhost:3000/api` to check out the interactive Swagger documentation.
+   - Head over to `http://localhost:3000/event` to check out the interactive Swagger documentation.
 
 ## API Endpoints
 
@@ -151,19 +151,28 @@ src
 ├── app.service.ts
 ├── main.ts
 ├── modules
-│   ├── core
+│   ├── cored
+|   |   ├──dtos/
+|   |   |   ├──cancel-booking.dto.ts
+|   |   |   ├──create-booking.dto.ts
+|   |   |   └── create-waitingList.dto.ts
 │   │   ├── core.service.ts
 │   │   ├── core.service.spec.ts
 │   │   ├── core.module.ts
 │   │   ├── core.controller.ts
 │   │   └── core.controller.spec.ts
 │   ├── events
+|   |   ├──dtos/
+|   |   |   ├──create-event-status.dto.ts
+|   |   |   └── create-event.dto.ts
 │   │   ├── events.controller.ts
 │   │   ├── events.controller.spec.ts
 │   │   ├── events.module.ts
 │   │   ├── events.service.ts
 │   │   └── events.service.spec.ts
 │   ├── users
+|   |   ├──dtos/
+|   |   |   └── create-user.dto.ts
 │   │   ├── users.controller.ts
 │   │   ├── users.controller.spec.ts
 │   │   ├── users.module.ts
