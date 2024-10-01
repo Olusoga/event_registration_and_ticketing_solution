@@ -138,3 +138,54 @@ I’m always open to contributions! If you have suggestions or find issues, feel
 ## License
 
 This project is licensed under the MIT License. Check out the [LICENSE](LICENSE) file for details.
+
+## Project Structure
+
+Here's a quick overview of the project structure:
+
+```
+src
+├── app.controller.ts
+├── app.controller.spec.ts
+├── app.module.ts
+├── app.service.ts
+├── main.ts
+├── modules
+│   ├── core
+│   │   ├── core.service.ts
+│   │   ├── core.service.spec.ts
+│   │   ├── core.module.ts
+│   │   ├── core.controller.ts
+│   │   └── core.controller.spec.ts
+│   ├── events
+│   │   ├── events.controller.ts
+│   │   ├── events.controller.spec.ts
+│   │   ├── events.module.ts
+│   │   ├── events.service.ts
+│   │   └── events.service.spec.ts
+│   ├── users
+│   │   ├── users.controller.ts
+│   │   ├── users.controller.spec.ts
+│   │   ├── users.module.ts
+│   │   ├── users.service.ts
+│   │   └── users.service.spec.ts
+├── logger
+│   ├── logger.module.ts
+│   └── logger.service.ts
+├── enums
+│   └── booking-status.enum.ts
+├── database
+│   ├── entities
+│   │   ├── booking.entity.ts
+│   │   ├── event.entity.ts
+│   │   ├── user.entity.ts
+│   │   └── waiting_list.entity.ts
+│   └── migrations/
+├── config
+│   └── typeorm.config.ts
+├── common
+│   └── all-exception-filter.ts
+
+```
+
+This structure promotes modularity and maintainability, allowing for easy navigation and updates to different parts of the application.
