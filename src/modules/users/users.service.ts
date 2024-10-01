@@ -14,14 +14,11 @@ export class UsersService {
   async create(createUserDto: CreateUserDto): Promise<User> {
 
     try{
-        // const existingUser = await this.userRepository.findOne({ where: { email: createUserDto.email } });
-        // if (existingUser) {
-        //   throw new Error('User with this email already exists');
-        // }
         const user = this.userRepository.create(createUserDto);
         return await this.userRepository.save(user);
     }catch (error) {
         throw new InternalServerErrorException('Failed to create user');
       }
   }
+
 }
