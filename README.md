@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the Event Ticket Booking System! 🎟️ This Node.js application is crafted to provide a seamless experience for event ticket management, showcasing advanced development skills. The project emphasizes asynchronous programming, concurrency handling, and a clean RESTful API design—all while embracing Test-Driven Development (TDD) principles.
+Welcome to the Event Ticket Booking System! 🎟️ This Node.js application is designed to deliver a smooth and user-friendly experience for managing event tickets. Built with a focus on modern development practices, it highlights advanced skills like asynchronous programming and handling concurrency, ensuring high performance and reliability. The system follows a clean, well-structured RESTful API design, with a strong commitment to Test-Driven Development (TDD) to ensure quality and maintainability at every step.
 
 ## Table of Contents
 
@@ -117,15 +117,15 @@ Here’s a quick rundown of the available endpoints:
 
 - **Concurrency Handling**: I’ve utilized optimistic locking and NestJS transactions to handle potential race conditions effectively. This ensures our ticket booking process is both reliable and efficient.
 - **Data Management**: TypeORM has been my go-to for managing database interactions and schema migrations—making our lives easier when evolving the data model.
-- **API Documentation**: Swagger is integrated to provide real-time documentation, making it easier for developers (and future me!) to understand how to interact with the API.
+- **API Documentation**: Swagger is integrated to provide real-time documentation, making it easier for developers  to understand how to interact with the API.
 - **Rate Limiting**: I’ve added a layer of protection against potential abuse by implementing rate limiting with the `rate-limiter-flexible` library.
 
 ## Testing
 
 Testing is at the heart of this project. Here’s how it’s structured:
 
-- **Unit Tests**: Every core functionality has been meticulously tested.
-- **Integration Tests**: Comprehensive coverage for all API endpoints—aiming for at least 80% coverage overall.
+- **Unit Tests**: I've thoroughly tested every core feature, covering both positive and negative scenarios to ensure the system handles all situations smoothly and reliably..
+- **Integration Tests**: I ensure thorough testing of all API endpoints, with a goal of achieving at least 80% overall coverage to guarantee reliability and robustness throughout the system.
 - **Run Tests**:
   ```bash
   npm run test
